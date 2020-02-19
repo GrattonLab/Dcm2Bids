@@ -73,11 +73,11 @@ ex
   ``` afni ```
   
   
-* This will open the afni program and show you the anatomical scan if one exists. The image should NOT have a face on it. 
+* This will open the afni program and show you the anatomical scan if one exists, click on overlay and select the T1 file. The image should NOT have a face on it. 
   
 ### bids_valid
 * Verify the script worked, open the subjects session in the Nifti folder it should look bids appropriate 
-* Then go to this website and select the entire Nifti folder 
+* Then go to this website and select the entire Nifti folder, select to ignore warnings and Nifti headers. This will take awhile to load and will output whether the files are BIDs approved.  
 * http://bids-standard.github.io/bids-validator/
   
   
