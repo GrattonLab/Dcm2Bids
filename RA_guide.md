@@ -18,16 +18,20 @@
   
   ### iNet2BIDS_all
   * Open the terminal type in the following
+
+  
   
   
    ``` cd /Volumes/GRATTONLAB/iNetworks/BIDS/Nifti/.bidsignore ```
    
-   
+   **NOTE if you have not done so before you will need to give the script permissions**
+     
   * Run the following **change based on your subject and session**
-  
+  ```chmod 777 iNet2BIDS_allRDSS```
   
   ``` ./iNet2BIDS_allRDSS ${sub} ${ses} ```
-  
+  *If you get an error that the file path was not found type*
+    ``` ./iNet2BIDS_allRDSS.sh ${sub} ${ses} ```
   
   ex
   
