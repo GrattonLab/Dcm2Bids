@@ -26,10 +26,15 @@
    
    **NOTE if you have not done so before you will need to give the script permissions**
      
+```chmod 777 iNet2BIDS_allRDSS```
+   
+   
   * Run the following **change based on your subject and session**
-  ```chmod 777 iNet2BIDS_allRDSS```
+  
   
   ``` ./iNet2BIDS_allRDSS ${sub} ${ses} ```
+  
+  
   *If you get an error that the file path was not found type*
     ``` ./iNet2BIDS_allRDSS.sh ${sub} ${ses} ```
   
