@@ -20,19 +20,19 @@
   * Open the terminal type in the following
   
   
-   ``` cd ~/Box/DATA/iNetworks/BIDS/Nifti/.bidsignore ```
+   ``` cd /Volumes/GRATTONLAB/iNetworks/BIDS/Nifti/.bidsignore ```
    
    
   * Run the following **change based on your subject and session**
   
   
-  ``` ./iNet2BIDS_all ${sub} ${ses} ```
+  ``` ./iNet2BIDS_allRDSS ${sub} ${ses} ```
   
   
   ex
   
   
-   ``` ./iNet2BIDS_all INET001 1 ```
+   ``` ./iNet2BIDS_allRDSS INET001 1 ```
    
    
  * Fill out the QC sheet with the number 1 to indicate the script is running
@@ -61,13 +61,13 @@
 * Open the terminal and go to the anat folder
 
 
-``` cd ~/Box/DATA/iNetworks/BIDS/Nifti/sub-${sub}/${ses}/anat ```
+``` cd /Volumes/GRATTONLAB/iNetworks/BIDS/Nifti/sub-${sub}/${ses}/anat ```
 
 
 ex
 
 
-  ``` cd ~/Box/DATA/iNetworks/BIDS/Nifti/sub-INET001/ses-3/anat ```
+  ``` cd /Volumes/GRATTONLAB/iNetworks/BIDS/Nifti/sub-INET001/ses-3/anat ```
   
   
   ``` afni ```
