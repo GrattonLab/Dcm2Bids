@@ -114,6 +114,7 @@ ex
   Ex
   
     ``` cd /.bidsignore ```
+    
     ``` python -c "exec(open('fix_jsonsRDSS.py').read()); fix_jsons('INET002', '4')" ```
     
    * If phasediff file does not exist
