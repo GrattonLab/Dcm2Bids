@@ -90,3 +90,32 @@ ex
 * http://bids-standard.github.io/bids-validator/
   
   
+  
+  
+  
+### WHAT TO DO IF FMAPS DONT WORK
+* Login to Nunda and determine what scan number the phase diff file is for the sub/ses you are working on. To find look for scan titled gre_field_mapping with Image Type ORIGINAL/PRIMARY/P/ND 
+* Open a terminal and go to the Nifti directory 
+
+    ``` cd /Volumes/GRATTONLAB/iNetworks/BIDS/Nifti ```
+    
+ * Type dcm2bids but ONLY the scan number you found on Nunda
+ 
+ Ex for INET002 session 4, fmap from scan 6 based on nunda
+ 
+   ``` dcm2bids -d /Volumes/GRATTONLAB/iNetworks/BIDS/DICOM/sub-INET002/INET002_4/SCANS/6/DICOM -p INET002 -s 4 -c /Volumes/GRATTONLAB/iNetworks/BIDS/Nifti/.bidsignore/config.json --clobber  --forceDcm2niix```
+   
+  The converter will only go into that particular scan which will take significantly less time then rerunning the entire shell script (<5min) once complete go into the folder to see if phasediff files exist
+  
+  * If do exist
+  
+  You will have to run an additional script to apply some of what would have otherwise been applied during the inet2bids shell script
+  
+  Ex
+  
+    ``` cd /.bidsignore ```
+    ``` python -c "exec(open('fix_jsonsRDSS.py').read()); fix_jsons('INET002', '4')" ```
+    
+   * If phasediff file does not exist
+   
+   Contact Alexis for further debugging
