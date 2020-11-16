@@ -120,4 +120,14 @@ ex
     
    * If phasediff file does not exist
    
+ Run this (with the appropriate sub/ses
+ 
+    ``` dcm2bids -d /Volumes/GRATTONLAB/iNetworks/BIDS/DICOM/sub-INET002/INET002_4/SCANS/6/DICOM -p INET002 -s 4 -c /Volumes/GRATTONLAB/iNetworks/BIDS/Nifti/.bidsignore/config3.json --clobber  --forceDcm2niix```
+    
+ Check to see if phasediff exists and run python code above
+ 
+ 
+   
+   
+   
    Contact Alexis for further debugging
