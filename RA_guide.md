@@ -93,7 +93,7 @@ ex
   
   
   
-### WHAT TO DO IF FMAPS DONT WORK
+### What to do if fmaps phasediff file wasn't created 
 * Login to Nunda and determine what scan number the phase diff file is for the sub/ses you are working on. To find look for scan titled gre_field_mapping with Image Type ORIGINAL/PRIMARY/P/ND 
 * Open a terminal and go to the Nifti directory 
 
